@@ -1,0 +1,45 @@
+{
+  "name": "reachinbox-backend",
+  "version": "1.0.0",
+  "description": "ReachInbox email scheduler backend",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "keywords": [
+    "reachinbox",
+    "email",
+    "scheduler",
+    "bullmq"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bull-board/api": "^9.10.1",
+    "@bull-board/express": "^9.10.1",
+    "@elastic/elasticsearch": "^8.19.2",
+    "@prisma/adapter-mariadb": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "bullmq": "^6.3.9",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.4",
+    "express": "^5.1.0",
+    "google-auth-library": "^11.1.0",
+    "ioredis": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mariadb": "^3.5.4",
+    "nodemailer": "^10.0.10"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.5.2",
+    "prisma": "^7.10.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

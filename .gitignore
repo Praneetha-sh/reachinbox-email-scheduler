@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+out/
+.next/
+.vite/
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Temporary files
+tmp/
+temp/
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
